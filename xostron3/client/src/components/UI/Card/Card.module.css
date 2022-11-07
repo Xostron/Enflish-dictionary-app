@@ -1,0 +1,128 @@
+/* ширина scrollbar */
+.scroll::-webkit-scrollbar {
+    height: 4px;
+    /* width: 10vw; */
+    /* border: none; */
+    /* background-color: rgb(255, 123, 0); */
+}
+
+/* цвет дорожки */
+.scroll::-webkit-scrollbar-track {
+    /* -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset; */
+    /* background-color: #f9f9fd; */
+    /* border-radius: 0px; */
+    /* border: none; */
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    /* закругления плашки */
+    border-radius: 10px;
+    /* цвет плашки */
+    background: linear-gradient(90deg, #afafaf, #555555);
+    /* border: 3px solid orange; */
+}
+
+/* контейнер гориз. скролла */
+.scroll {
+    display: flex;
+    flex-wrap: nowrap;
+    cursor: auto;
+    gap: .8rem;
+    margin: 0;
+    padding-bottom: .4rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    /* background-color: bisque; */
+}
+
+@media screen and (max-width:1050px) {
+    /* .scroll {
+        width: 100vw;
+        padding-right: 5vw;
+        padding-left: 5vw;
+        margin-left: -5vw;
+    } */
+
+    .scroll::-webkit-scrollbar {
+        height: 4px;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .scroll {
+        width: 100vw;
+        padding-right: 2vw;
+        padding-left: 2vw;
+        margin-left: -2vw;
+    }
+
+    .scroll::-webkit-scrollbar {
+        height: 0;
+    }
+}
+
+/* ******************************************************************* */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    border: hidden;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.wrapper:focus {
+    outline: none;
+}
+
+.wrapper:hover {
+    opacity: 60%;
+}
+
+.img {
+    border-radius: .4rem;
+    fill: #8f8f8f;
+    width: 128px;
+    height: 128px;
+    background-color: rgb(206, 206, 206);
+}
+
+.text {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    padding-top: .25rem;
+    max-width: 128px;
+    font-size: .8rem;
+}
+
+.inner {
+    max-width: inherit;
+    padding-bottom: .25rem;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* @media screen and (max-width:1050px) {
+    .img {
+        width: 128px;
+        height: 128px;
+        
+    }
+
+    .text {
+        max-width: 128px;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .img {
+        width: 128px;
+        height: 128px;
+        
+    }
+
+    .text {
+        max-width: 128px;
+    }
+} */

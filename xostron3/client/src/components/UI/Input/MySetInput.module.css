@@ -1,0 +1,53 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: .2rem;
+    /* background-color: rgba(167, 167, 167, 0.795); */
+}
+
+@media screen and (max-width:580px) {
+    .wrapper {
+        width: 95%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+}
+
+.row {
+    display: flex;
+    /* width: 100%; */
+    gap: .2rem;
+    /* background-color: #256ce1; */
+}
+
+.my_input {
+    display: flex;
+    width: 100%;
+    padding-left: .2rem;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+    border: .15rem solid #5f5f5f !important;
+    border-radius: .3rem;
+    outline: none;
+    background-color: transparent;
+    font-size: .85rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.my_textarea {
+    border-radius: .3rem;
+    padding-left: .2rem;
+    padding-top: .2rem;
+    width: 100%;
+    resize: none;
+    border: .15rem solid #5f5f5f;
+    font-size: .85rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    outline: none;
+    line-height: 1rem;
+}

@@ -1,0 +1,101 @@
+.container {
+    display: flex;
+    padding: .2rem 0rem;
+    /* background-color: rgb(163, 94, 228); */
+}
+
+.image,
+.icon {
+    width: 10rem;
+    height: auto;
+}
+
+.icon {
+    fill: #5f5f5f;
+}
+
+
+
+/* ************************************************************ */
+
+.right {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-left: .2rem;
+    /* row-gap: .5rem; */
+    width: 100%;
+}
+
+.secondaryText {
+    font-size: .75rem;
+    text-align: right;
+}
+
+.titleText {
+    font-size: 1rem;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-bottom: .5rem;
+}
+
+.usualText {
+    height: 6rem;
+    display: flex;
+    /* white-space: normal; */
+    word-break: break-all;
+    /* line-break: normal; */
+    /* overflow-wrap: break-word; */
+    /* text-align: justify; */
+    /* background-color: bisque; */
+    overflow-y: auto;
+}
+
+@media screen and (max-width:1050px) {
+
+    .image,
+    .icon {
+        width: 8rem;
+        height: auto;
+    }
+
+    .usualText {
+        height: 5rem;
+    }
+}
+
+@media screen and (max-width:580px) {
+
+    .image,
+    .icon {
+        width: 5rem;
+        height: auto;
+    }
+
+    .usualText {
+        height: 2.5rem;
+    }
+}
+
+/***************** CUSTOM SCROLL ***********************/
+/* ширина scrollbar */
+.usualText::-webkit-scrollbar {
+    width: .15rem;
+}
+
+/* цвет дорожки */
+.usualText::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    /* background-color: #f9f9fd; */
+    border-radius: 0px;
+}
+
+.usualText::-webkit-scrollbar-thumb {
+    /* закругления плашки */
+    border-radius: 10px;
+    /* цвет плашки */
+    background: linear-gradient(180deg, #afafaf, #555555);
+    /* border: 3px solid orange; */
+}

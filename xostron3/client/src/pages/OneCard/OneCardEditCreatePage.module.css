@@ -1,0 +1,13 @@
+.container {
+    /* padding-top: .2rem; */
+}
+
+.card {
+    display: flex;
+    padding: .2rem 0rem;
+    /* margin-left: 2%; */
+    /* margin-right: 2%; */
+    width: 100%;
+    /* background-color: rgb(209, 196, 180); */
+    /* justify-content: space-between; */
+}

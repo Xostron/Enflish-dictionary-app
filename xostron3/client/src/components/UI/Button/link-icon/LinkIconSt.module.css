@@ -1,0 +1,38 @@
+.myLink {
+    display: flex;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.myLink:hover .navIcon {
+    fill: #256ce1;
+    transition: all .2s ease;
+}
+
+.myLink:hover .navText {
+    color: #256ce1;
+    transition: all .2s ease;
+}
+
+.navText {
+    margin-left: 8px;
+}
+
+
+
+.myLink.active {
+    color: #256ce1;
+}
+
+.myLink.active .navIcon {
+    fill: #256ce1;
+}
+
+/* @media screen and (max-width:800px) {
+    .navText {
+        display: none;
+    }
+} */

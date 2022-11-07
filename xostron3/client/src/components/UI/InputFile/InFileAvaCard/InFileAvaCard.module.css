@@ -1,0 +1,83 @@
+.container {
+    display: flex;
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    cursor: pointer;
+    outline: 2px solid;
+    outline-offset: -2px;
+    transition: all .2s ease-in-out;
+}
+
+
+
+
+.iconCancel {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    fill: rgb(160, 26, 26);
+    transition: all .2s ease;
+    /* background-color: blueviolet; */
+}
+
+.iconCancel:hover {
+    background-color: black;
+    fill: aliceblue;
+    transition: all .2s ease;
+}
+
+.container .btnCancel {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.container .icon {
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    fill: #6497e9;
+    transition: all .2s ease-in-out;
+}
+
+.container:hover {
+    outline-color: #256de1;
+    transition: all .2s ease-in-out;
+}
+
+.container:hover .icon {
+    fill: #256de1;
+    transition: all .2s ease-in-out;
+}
+
+.image {
+    width: 10rem;
+    /* height: 10rem; */
+}
+
+
+
+.hiddenInFile {
+    visibility: hidden;
+    position: absolute;
+}
+
+@media screen and (max-width:580px) {
+
+    .container,
+    image {
+        width: 8rem;
+        height: 8rem;
+    }
+
+
+
+}

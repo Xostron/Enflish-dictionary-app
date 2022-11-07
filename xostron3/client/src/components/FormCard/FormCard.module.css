@@ -1,0 +1,92 @@
+.container {
+    display: flex;
+    padding: .2rem 0rem;
+}
+
+/* ************************************************************ */
+.image {
+    width: 10rem;
+    height: 10rem;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-left: .2rem;
+    width: 100%;
+}
+
+.spanName {
+    padding: .2rem 0;
+}
+
+.textName,
+.textDesc {
+    display: flex;
+    padding: .2rem;
+    outline: none;
+    background-color: transparent;
+}
+
+.textName {
+    border: none !important;
+    border-bottom: 1px solid #9b9b9b !important;
+    transition: all .4s ease;
+}
+
+.spanDesc {
+    margin-top: .6rem;
+    margin-bottom: .2rem;
+}
+
+.textDesc {
+    height: 100%;
+    resize: none;
+    border: 1px solid #9b9b9b;
+    transition: all .4s ease;
+}
+
+.textName:focus {
+    border-bottom: 1px solid #256de1 !important;
+    transition: all .4s ease;
+}
+
+.textDesc:focus {
+    border: 1px solid #256de1;
+    transition: all .4s ease;
+}
+
+
+
+
+@media screen and (max-width:580px) {
+
+    .image {
+        width: 8rem;
+        height: 8rem;
+    }
+
+
+}
+
+/***************** CUSTOM SCROLL ***********************/
+/* ширина scrollbar */
+.textDesc::-webkit-scrollbar {
+    width: .15rem;
+}
+
+/* цвет дорожки */
+.textDesc::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    /* background-color: #f9f9fd; */
+    border-radius: 0px;
+}
+
+.textDesc::-webkit-scrollbar-thumb {
+    /* закругления плашки */
+    border-radius: 10px;
+    /* цвет плашки */
+    background: linear-gradient(180deg, #79a2e4, #256de183);
+    /* border: 3px solid orange; */
+}

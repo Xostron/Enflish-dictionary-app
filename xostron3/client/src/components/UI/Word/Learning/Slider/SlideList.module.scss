@@ -1,0 +1,19 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 250%;
+    align-items: center;
+    position: absolute;
+    row-gap: 16px;
+    transition: transform .4s ease-in-out;
+    top: -189.5%;
+}
+
+.wrapper50 {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+    row-gap: 16px;
+}

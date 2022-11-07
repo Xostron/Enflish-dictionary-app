@@ -1,0 +1,12 @@
+.wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    transition: background-color .4s ease-in-out;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    // transform:  translateY(-50%) translateZ(60px) scale(.94);
+}
+

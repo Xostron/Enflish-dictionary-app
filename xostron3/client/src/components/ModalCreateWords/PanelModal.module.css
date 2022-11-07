@@ -1,0 +1,27 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 2.5rem;
+    /* flex-direction: row; */
+    align-items: center;
+    background-color: rgb(219, 219, 219);
+}
+
+/***************VIEW ROUTES TABLET*****************/
+@media screen and (max-width:1050px) {
+    .wrapper {
+        width: 90vw;
+        /* background-color: rgba(164, 250, 66, 0.589); */
+    }
+
+}
+
+/***************VIEW ROUTES MOBILE*****************/
+@media screen and (max-width:580px) {
+    .wrapper {
+        width: 96vw;
+        /* background-color: rgba(243, 138, 67, 0.466); */
+    }
+
+
+}

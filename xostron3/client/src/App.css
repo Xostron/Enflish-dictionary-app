@@ -1,0 +1,42 @@
+/* ******************************************************* */
+hr {
+  border: none;
+  border-top: solid 1.5px;
+}
+
+.horizLine {
+  border: solid 1px;
+  /* box-shadow: 0px 0px 1px rgb(78, 78, 78); */
+  /* width: 100%; */
+  /* margin-left: 2%; */
+  /* margin-right: 2%; */
+  /* width: 95.5%; */
+  /* padding-top: 8px;
+  padding-bottom: 8px; */
+}
+
+.horizLineFooter {
+  border: solid 2px;
+  /* box-shadow: 0px 0px 1px rgb(78, 78, 78); */
+  width: 100%;
+  /* margin-left: 5%; */
+  /* margin-right: 2%; */
+  /* width: 95.5%; */
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+/* *****обертка для кнопок - горизонталь(scroll)***** */
+.wrapper_btn_hor_scroll {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+  margin-left: 2%;
+  margin-right: 2%;
+  /* height: 50px; */
+  /* background-color: aqua; */
+  /* border: 2px solid; */
+}

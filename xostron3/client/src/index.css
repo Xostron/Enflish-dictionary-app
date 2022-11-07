@@ -1,0 +1,126 @@
+@import-normalize;
+
+/*************INIT***********/
+html {
+  font-size: 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  min-width: 343px;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+/************ очистка стилей браузера по-умолчанию ***********/
+* {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+/******************* Подключение скаченных шрифтов *********/
+/* @font-face {
+  font-family: "GoldmanBold";
+  src: local("GoldmanBold"),
+    url("./fonts/Goldman/Goldman-Bold.ttf") format("truetype");
+  font-weight: bold;
+} */
+
+/* @font-face {
+  font-family: "Lavalamp";
+  src: local("Lavalamp"),
+    url("./fonts/Lavalamp/Lavalamp filled.ttf") format("truetype");
+} */
+
+/***************** CUSTOM SCROLL ***********************/
+/* ширина scrollbar */
+body::-webkit-scrollbar {
+  width: .3rem;
+
+}
+
+/* цвет дорожки */
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  /* background-color: #f9f9fd; */
+  border-radius: 0px;
+}
+
+body::-webkit-scrollbar-thumb {
+  /* закругления плашки */
+  border-radius: 10px;
+  /* цвет плашки */
+  background: linear-gradient(180deg, #afafaf, #555555);
+  /* border: 3px solid orange; */
+}
+
+
+/* MOBILE - убрать горизонтальный скролл */
+html,
+body {
+  overflow-x: hidden;
+  max-height: 100vh;
+
+}
+
+body {
+  position: relative;
+  overflow-y: scroll;
+  /* min-height: 100vh; */
+}
+
+/**************VIEW ROUTES DESKTOP****************/
+main {
+  padding-top: 50px;
+  max-width: 85vw;
+  margin: 0 auto;
+  /* overflow-y: scroll; */
+  /* background-color: rgba(0, 162, 255, 0.637); */
+}
+
+
+/***************VIEW ROUTES TABLET*****************/
+@media screen and (max-width:1050px) {
+  main {
+    max-width: 90vw;
+    /* background-color: rgba(164, 250, 66, 0.589); */
+  }
+
+  html {
+    font-size: 17px;
+  }
+}
+
+/***************VIEW ROUTES MOBILE*****************/
+@media screen and (max-width:579.98px) {
+  main {
+    max-width: 96vw;
+    /* background-color: rgba(243, 138, 67, 0.466); */
+  }
+
+  html {
+    font-size: 16px;
+  }
+}
+
+
+
+/* input:valid {
+  border: 2px solid rgb(175, 175, 175);
+}
+
+input:invalid:required {
+  background: rgba(218, 218, 218, 0.342);
+}
+
+input:invalid {
+  border: 2px solid rgb(175, 175, 175, 0.342);
+} */

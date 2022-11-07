@@ -1,0 +1,40 @@
+.myLink {
+    text-decoration: none;
+    /* color: rgb(18, 196, 56); */
+    cursor: pointer;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    /* background-color: red; */
+}
+
+
+.myLink.active {
+    color: #256ce1;
+}
+
+.myLink.active .navIcon {
+    fill: #256ce1;
+}
+
+.myLink:hover {
+    /* background-color: #8181812d; */
+    transition: all .2s ease-in-out;
+}
+
+.myLink:hover .navIcon {
+    fill: #256ce1;
+}
+
+.navText {
+    margin-left: 16px;
+}
+
+/* @media screen and (max-width:800px) {
+    .navText {
+        display: none;
+    }
+} */

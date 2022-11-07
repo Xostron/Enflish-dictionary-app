@@ -1,0 +1,69 @@
+.container {
+    display: flex;
+    // margin-left: 2%;
+    // margin-right: 2%;
+    // background-color: bisque;
+    justify-content: center;
+    // padding-bottom: 200px;
+}
+
+.cards {
+    // margin-top: 16px;
+    row-gap: .5rem;
+    padding: .5rem 0;
+    // padding-bottom: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 85vw;
+    // min-width: 343px;
+    justify-content: space-around;
+    /* background-color: dimgray; */
+}
+
+.myFooter {
+    position: fixed;
+    top: 100%;
+    left: 0;
+    transform: translate(0%, -100%);
+    width: 100vw;
+    // min-width: 320px;
+    // height: 150px;
+    display: flex;
+    align-items: center;
+    // flex-direction: column;
+    justify-content: center;
+    // border-top: 2px solid;
+    z-index: 100;
+    // background-color: rgb(175, 119, 46);
+}
+
+.wrapperFooter {
+    padding: .8rem 0;
+    // margin-bottom: .2rem;
+    width: 85vw;
+    display: flex;
+    align-items: center;
+    // flex-direction: column;
+    justify-content: center;
+    flex-direction: row;
+    // background-color: aqua;
+}
+
+/***************VIEW ROUTES TABLET*****************/
+@media screen and (max-width:1050px) {
+
+    .wrapperFooter,
+    .cards {
+        width: 90vw;
+    }
+}
+
+/***************VIEW ROUTES MOBILE*****************/
+@media screen and (max-width:580px) {
+
+    .wrapperFooter,
+    .cards {
+        width: 96vw;
+    }
+
+}

@@ -1,0 +1,59 @@
+.circle-wrap[data-value] {
+    display: flex;
+    margin: auto;
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 50%;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+    background: #d4d4d4;
+    border: solid 1px #d4d4d4;
+}
+
+.circle-wrap .circle .mask {
+    min-width: 49px;
+    min-height: 49px;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 50%;
+    clip: rect(0px, 49px, 49px, 24.5px);
+}
+
+.fill1,
+.fill2 {
+    min-width: 49px;
+    min-height: 49px;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 49%;
+    background: #478fe2;
+    clip: rect(0px, 25px, 50px, 0px);
+}
+
+
+.circle-wrap .inside-circle {
+    display: flex;
+    margin: auto auto;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    min-width: 35px;
+    min-height: 35px;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #478fe2;
+    /* position: absolute; */
+    z-index: 1;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.circle {
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0px; */
+    /* margin: 100px auto; */
+}

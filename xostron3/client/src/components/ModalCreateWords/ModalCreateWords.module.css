@@ -1,0 +1,37 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.title {
+    height: 2.5rem;
+}
+
+.myTable {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: .2rem 2rem 0rem 2rem;
+}
+
+.row:hover {
+    /* background-color: rgba(255, 0, 0, 0.384); */
+}
+
+/* Нечетные строки */
+/* .row:nth-child(odd) {
+    background: rgba(0, 0, 0, 0.068);
+} */
+
+/* Четные строки */
+/* .row:nth-child(even) {
+    background: rgb(228, 228, 228);
+} */

@@ -1,0 +1,36 @@
+.wrapper {
+    display: flex;
+    width: 50vw;
+    height: 50vh;
+    background-color: rgb(158, 79, 231);
+    /* text-align: center; */
+    /* margin: 15px 0; */
+    /* justify-content: center; */
+    margin: auto;
+}
+
+.input__file {
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+}
+
+.base__button {
+    display: flex;
+    width: 50%;
+    max-width: 500px;
+    height: 30%;
+    border: dashed 2px white;
+    background-color: rgb(73, 42, 87);
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+
+.text__button {
+    text-align: center;
+    color: aliceblue;
+}

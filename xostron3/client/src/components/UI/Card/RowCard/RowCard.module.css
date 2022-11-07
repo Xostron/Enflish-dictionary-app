@@ -1,0 +1,99 @@
+.wrapper__btn {
+    display: flex;
+    min-width: 343px;
+    border: hidden;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+    /* background-color: rgb(151, 19, 19); */
+}
+
+.wrapper__btn:focus {
+    outline: none;
+}
+
+.wrapper__btn:hover {
+    background-color: rgba(104, 106, 109, 0.2);
+}
+
+.left_part {
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* background-color: rgba(221, 138, 221, 0.945); */
+}
+
+.img_wrapper {
+    /* background-color: aliceblue; */
+}
+
+.icon {
+    border: hidden;
+    width: 2.8rem;
+    height: 2.8rem;
+    background-color: transparent;
+}
+
+.svg {
+    border-radius: .4rem;
+    width: 2.8rem;
+    height: 2.8rem;
+    fill: #5f5f5f;
+    background-color: rgb(207, 207, 207);
+}
+
+.content__wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: auto .4rem;
+    row-gap: .2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* background-color: red; */
+}
+
+.inner1,
+.inner2 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.inner1 {
+    font-size: 1.05rem;
+}
+
+.inner2 {
+    font-size: .85rem;
+}
+
+@media screen and (max-width:580px) {
+
+    .svg,
+    .icon {
+        width: 3.8rem;
+        height: 3.8rem;
+    }
+
+    .inner1 {
+        display: flex;
+        flex-direction: column;
+        row-gap: .2rem;
+    }
+
+}
+
+.right_part {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* background-color: blue; */
+
+}
+
+.right_part:hover .BtnIcon {
+    fill: #256ce1;
+}

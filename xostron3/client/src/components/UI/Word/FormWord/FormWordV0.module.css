@@ -1,0 +1,40 @@
+.wrapper__btn {
+    display: flex;
+    border: hidden;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+}
+
+
+
+@media screen and (min-width:1050px) {
+    .wrapper__btn:hover {
+        background-color: rgba(104, 106, 109, 0.2);
+    }
+
+    .wrapper__btn:focus {
+        outline: none;
+    }
+}
+
+
+
+.left_part {
+    display: flex;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.left_part.onCheck {
+    /* margin-left: 2%; */
+}
+
+.right_part {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}

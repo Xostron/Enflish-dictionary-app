@@ -1,0 +1,39 @@
+.container {
+    position: fixed;
+    top: 100%;
+    left: 0%;
+    transform: translateY(-100%);
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    /* border-top: 2px solid; */
+    /* z-index: 100; */
+}
+
+.wrapper {
+    margin-top: .2rem;
+    margin-bottom: .2rem;
+    width: 85vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/***************VIEW ROUTES TABLET*****************/
+@media screen and (max-width:1050px) {
+    .wrapper {
+        width: 90vw;
+    }
+}
+
+/***************VIEW ROUTES MOBILE*****************/
+@media screen and (max-width:580px) {
+    .wrapper {
+        width: 96vw;
+    }
+
+}

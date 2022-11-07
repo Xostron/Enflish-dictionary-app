@@ -1,0 +1,31 @@
+.hiddenFile {
+    visibility: hidden;
+    position: absolute;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    cursor: pointer;
+    /* padding: .2rem; */
+    /* padding-right: .4rem; */
+    gap: .4rem;
+}
+
+.wrapper:hover .icon {
+    fill: #256ce1;
+    transition: fill .2s ease;
+}
+
+.wrapper:hover .text {
+    color: #256ce1;
+    transition: color .2s ease;
+}
+
+.icon {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+.text {}
