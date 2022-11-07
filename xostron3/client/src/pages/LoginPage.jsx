@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react'
+import { MyLogin } from '../components/Login/MyLogin'
 import { userContext } from '../context/user.context'
 import { useHttp } from '../hooks/http.hook'
 
@@ -51,7 +52,7 @@ function Login() {
 
     return (
         <div style={{ display: 'flex', flexDirection: 'column', width: '50%' }}>
-            <input
+            {/* <input
                 type="text"
                 placeholder='Введите логин'
                 name='login'
@@ -73,7 +74,11 @@ function Login() {
                 onClick={registerHandler}
             >
                 Зарегистрироваться
-            </button>
+            </button> */}
+
+
+            <MyLogin />
+
         </div>
     )
 }
