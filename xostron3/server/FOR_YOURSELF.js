@@ -16,15 +16,7 @@ function getRow() {
     return { a, b, c, d }
 }
 
-// {
-//     a: [1, 2, 3],
-//     b: [4, 5, 6],
-//     c: {
-//         '1': { name: 'askar', num: '1980' },
-//         j: { name: 'styuna', num: '410' }
-//     },
-//     d: [{ name: 'askar', num: '1980' }, { name: 'styuna', num: '410' }]
-// }
+
 
 //***************************ENGDICT pg driver************************************ */
 
