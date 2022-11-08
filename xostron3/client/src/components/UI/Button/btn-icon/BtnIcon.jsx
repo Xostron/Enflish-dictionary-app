@@ -2,6 +2,7 @@ import React from 'react'
 import { HandySvg } from 'handy-svg'
 import style from './BtnIcon.module.css'
 const colorDisabled = '#0000003d'
+
 export const BtnIcon1 = ({ children, ...props }) => {
     return (
         <button {...props}>
@@ -43,6 +44,35 @@ export const BtnIcon = ({ item }) => {
 
     return (
         <div name={idName} className={style.wrapper} onClick={handler} >
+            {icon && <HandySvg
+                src={icon}
+                className={style.icon}
+                style={disabled === true ? { fill: colorDisabled } : {}}
+            />}
+            <span
+                className={style.text}
+                style={disabled === true ? { color: colorDisabled } : {}}
+            >
+                {name}
+            </span>
+        </div>
+    )
+}
+
+
+export const BtnIconRect = ({ item }) => {
+    const {
+        name,
+        icon,
+        handler,
+        disabled,
+        idName
+    } = item
+
+
+
+    return (
+        <div name={idName} className={style.wrapperRect} onClick={handler} >
             {icon && <HandySvg
                 src={icon}
                 className={style.icon}
