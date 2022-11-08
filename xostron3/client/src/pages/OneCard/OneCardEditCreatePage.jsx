@@ -21,53 +21,22 @@ function OneCardEditPage() {
     // Массив слов
     let [dict, setDict] = useState([
         {
-            word: 'Styuna410',
-            transcription: '',
-            translate: ['Солнышко'],
-            example: '',
+            word: 'Lorem Ipsum',
+            transcription: 'Lorem Ipsum',
+            translate: ['Lorem Ipsum'],
+            example: 'Lorem Ipsum',
             img: '',
             visible: ''
         },
         {
-            word: 'Styuna410',
-            transcription: '',
-            translate: ['Солнышко'],
-            example: '',
+            word: 'Lorem Ipsum Lorem Ipsum',
+            transcription: 'Lorem Ipsum',
+            translate: ['Lorem Ipsum', 'Lorem Ipsum'],
+            example: 'Lorem Ipsum',
             img: '',
             visible: ''
         },
-        {
-            word: 'Styuna410',
-            transcription: '',
-            translate: ['Солнышко'],
-            example: '',
-            img: '',
-            visible: ''
-        },
-        {
-            word: 'Styuna410',
-            transcription: '',
-            translate: ['Солнышко'],
-            example: '',
-            img: '',
-            visible: ''
-        },
-        {
-            word: 'Styuna410',
-            transcription: '',
-            translate: ['Солнышко'],
-            example: '',
-            img: '',
-            visible: ''
-        },
-        {
-            word: 'Styuna410',
-            transcription: '',
-            translate: ['Солнышко'],
-            example: '',
-            img: '',
-            visible: ''
-        }
+
     ])
 
     const handleUpload = async () => {

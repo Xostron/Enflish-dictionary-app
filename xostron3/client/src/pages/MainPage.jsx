@@ -175,7 +175,7 @@ export default function Main() {
                         icon={''}
                         word={value}
                     >
-                        <SetLinkOrBtn items={btnItems(value.ratio, idx)} />
+                        <SetLinkOrBtn items={btnItems('12%', idx)} />
                     </FormWordV0>
                 )
             })}

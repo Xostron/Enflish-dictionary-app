@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    width: 42%;
+    flex-direction: column;
+    row-gap: 1rem;
+    border: .15rem solid #a3a3a3;
+    padding: 1rem;
+    border-radius: .3rem;
+    margin: auto;
+    transform: translateY(25vh);
+    // align-items: center;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+@media screen and (max-width:1050px) {
+    .container {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:579.98px) {
+    .container {
+        width: 100%;
+    }
+}

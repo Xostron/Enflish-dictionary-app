@@ -51,7 +51,7 @@ function Login() {
     }, [user.userState])
 
     return (
-        <div style={{ display: 'flex', flexDirection: 'column', width: '50%' }}>
+        <div style={{ height: '90vh' }}>
             {/* <input
                 type="text"
                 placeholder='Введите логин'

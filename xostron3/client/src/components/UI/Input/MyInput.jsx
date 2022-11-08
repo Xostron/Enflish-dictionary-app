@@ -13,6 +13,7 @@ export const MyInput = ({ obj }) => {
         changeHandler,
         value,
         autoFocus,
+        type
     } = obj
 
     return (
@@ -20,13 +21,14 @@ export const MyInput = ({ obj }) => {
 
             <input
                 className={style.myInput}
-                type="text"
+                type={type || 'text'}
                 placeholder={placeholder}
                 name={name}
                 onChange={changeHandler}
                 autoComplete='off'
                 autoFocus={autoFocus || false}
                 value={value}
+
             />
             {iLogo &&
                 <HandySvg

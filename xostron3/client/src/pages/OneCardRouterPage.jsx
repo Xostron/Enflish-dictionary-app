@@ -301,9 +301,9 @@ export default function OneCardOutletPage() {
                 </Suspense >
 
 
-                <div className={style.anim}>
+                {/* <div className={style.anim}>
                     <Player />
-                </div>
+                </div> */}
 
 
                 {/* Футер основной страницы - показывается только на странице Редактирования */}
