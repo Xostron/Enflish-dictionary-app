@@ -6,6 +6,7 @@ class User_wordController {
     async Create(req, res) {
         const { user_id, word_id, word, transcription, translate, comment
         } = req.body
+        console.log(req.body)
         // const user_word = await 
     }
 

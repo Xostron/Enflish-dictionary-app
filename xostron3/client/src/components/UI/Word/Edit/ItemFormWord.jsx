@@ -78,10 +78,11 @@ export const ItemFormWord = ({ idx, value, icon, dict, setDict, onCheck = false 
     }
 
     const saveOne = async (data) => {
+        let postData = { ...data, user_id: 1234, asd: 'asdasdasd', idx: data }
         try {
-            const word = await request('/api/dicteng/create',
+            const word = await request('/api/user_word/create',
                 'POST',
-                { data }
+                { postData }
             )
             setUpdatePage(!updatePage)
         } catch (error) { }
