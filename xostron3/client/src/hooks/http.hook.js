@@ -10,15 +10,11 @@ export const useHttp = () => {
         setLoading(true)
         try {
             if (body) {
-                console.log('not stringify = ', body, typeof (body))
-                // body = JSON.stringify(body)//преобразование объекта в json строку
-                console.log('stringify = ', body)
-                // headers['Content-Type'] = 'application/json'
+                body = JSON.stringify(body)//преобразование объекта в json строку
+                headers['Content-Type'] = 'application/json'
             }
             const response = await fetch(url, { method, body, headers })
             const data = await response.json()
-            console.log('ok', response.ok)
-            console.log('status', response.status)
             if (!response.ok) {
                 throw new Error(data.message || 'Что-то пошло не так((')
             }
