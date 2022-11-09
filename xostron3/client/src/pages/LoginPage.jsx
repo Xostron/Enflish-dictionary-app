@@ -25,7 +25,7 @@ function Login() {
     // Событие: запрос на сервер - регистрация
     const registerHandler = async () => {
         try {
-            const data = await request('/api/user/auth?id=1&idx=Xostron', 'GET')
+            const data = await request('/api/user/register', 'POST', { ...form })
             console.log(data, typeof (data))
         } catch (error) { }
     }

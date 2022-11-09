@@ -59,7 +59,7 @@ const User = sequelize.define(
     },
     { tableName: 'users' }
 )
-//3 Модель user_word - словарь пользователей
+//3 Модель user_word - слова пользователей
 const User_word = sequelize.define(
     'User_word',
     {
@@ -74,7 +74,7 @@ const User_word = sequelize.define(
     { tableName: 'user_word' }
 )
 
-//4 Модель user_word_stс - статистика слов каждого пользователя
+//4 Модель user_word_stс - статистика для каждого слова, каждого пользователя
 const User_word_stc = sequelize.define(
     'User_word_stc',
     {
