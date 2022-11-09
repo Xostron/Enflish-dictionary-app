@@ -11,45 +11,45 @@ import iOut from '../../img/bx-log-out.svg'
 import { BtnIconRect } from "../UI/Button/btn-icon/BtnIcon"
 
 
-export const MyLogin = () => {
+export const MyLogin = ({ changeHandler, loginHandler, registerHandler, form }) => {
     const [login, setLogin] = useState(false)
     const inputLogin = {
         name: 'login',
         placeholder: 'Введите логин',
         iLogo: iLogin,
         iHandler: iClear,
-        btnHandler: () => { },
-        changeHandler: () => { },
+        btnHandler: (e) => { e.target.value = '' },
+        changeHandler: (e) => { changeHandler(e) },
         autoFocus: true
     }
     const inputPsw = {
-        name: 'psw',
+        name: 'password',
         placeholder: 'Введите пароль',
         iLogo: iPsw,
         iHandler: iVisible,
         btnHandler: () => { },
-        changeHandler: () => { },
+        changeHandler: (e) => { changeHandler(e) },
         type: 'password'
     }
     const btnItems = {
         Reg: {
             name: 'Регистрация',
             icon: iReg,
-            handler: () => { },
+            handler: registerHandler,
             disabled: false,
             idName: ""
         },
         Login: {
             name: 'Войти',
             icon: iIn,
-            handler: () => { },
+            handler: loginHandler,
             disabled: false,
             idName: ""
         },
         Logout: {
-            name: 'Регистрация',
+            name: 'Выйти',
             icon: iOut,
-            handler: () => { },
+            handler: registerHandler,
             disabled: false,
             idName: ""
         }

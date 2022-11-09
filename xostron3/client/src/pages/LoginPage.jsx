@@ -7,7 +7,7 @@ function Login() {
     // ввод пользователя
     const [form, setForm] = useState(
         {
-            login: '', password: ''
+            login: 'qwe', password: '123'
         })
 
     // хук api - отправка запроса на сервер
@@ -25,7 +25,8 @@ function Login() {
     // Событие: запрос на сервер - регистрация
     const registerHandler = async () => {
         try {
-            const data = await request('/api/user/register', 'POST', { ...form })
+            const data = await request('/api/user/auth?id=1&idx=Xostron', 'GET')
+            console.log(data, typeof (data))
         } catch (error) { }
     }
 
@@ -49,35 +50,17 @@ function Login() {
     useEffect(() => {
         console.log('User entered =', user.userState)
     }, [user.userState])
-
+    console.log(form)
     return (
         <div style={{ height: '90vh' }}>
-            {/* <input
-                type="text"
-                placeholder='Введите логин'
-                name='login'
-                onChange={changeHandler}
-            />
-            <input
-                type="text"
-                placeholder='Введите пароль'
-                name='password'
-                onChange={changeHandler}
-            />
-            <button
-                onClick={loginHandler}
-                disabled={user.isAuth}
-            >
-                Войти
-            </button>
-            <button
-                onClick={registerHandler}
-            >
-                Зарегистрироваться
-            </button> */}
 
 
-            <MyLogin />
+
+            <MyLogin
+                changeHandler={changeHandler}
+                loginHandler={loginHandler}
+                registerHandler={registerHandler}
+            />
 
         </div>
     )
