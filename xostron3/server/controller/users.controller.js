@@ -1,13 +1,17 @@
 
-const { pool, User } = require('../db')
+const { query } = require('express')
+const { pool } = require('../db')
+const { User } = require('../db')
+const ApiError = require('../error/ApiError')
 
+// Класс User методы для обработки API запросов 
 class UserController {
 
     async Register(req, res) {
         const { login, password } = req.body
         const role = ['user']
         const img = ''
-
+        console.log('test=', login, password, req.body)
         try {
             const newUser = await User.create({
                 login: login,
@@ -21,7 +25,7 @@ class UserController {
             })
         } catch (error) {
             res.status(500).json({
-                message: "Такой пользователь уже существует (-_-)",
+                message: "Ошибка регистрации (-_-)",
                 description: `Ответ от сервера БД: ${error.message}`
             })
         }
@@ -29,7 +33,7 @@ class UserController {
 
     async Login(req, res) {
         const { login, password } = req.body
-        console.log(login)
+        console.log(login, password)
         try {
             const user = await User.findAll({
                 where: {
@@ -45,10 +49,19 @@ class UserController {
             })
         } catch (error) {
             res.status(500).json({
-                message: "Пользователь не найден (-__-)",
+                message: "ошибка авторизации (-__-)",
                 description: `Ответ от сервера БД: ${error.message}`
             })
         }
+    }
+
+
+    async Check(req, res, next) {
+        const { id, idx } = req.query
+        if (id != '0') {
+            return next(ApiError.badRequest('id ERROR !'))
+        }
+        res.json({ id, idx })
     }
 
     async ReadAll(req, res) {

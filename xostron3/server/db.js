@@ -1,7 +1,11 @@
+// Для строковых запросов напрямую к БД
 const Pool = require('pg').Pool
+
+
+// Подключаем ORM Object Related Model
 const { Sequelize, DataTypes, Model } = require('sequelize')
 
-
+// БД
 const myDb = {
     user: "postgres",
     password: '1980',
@@ -10,7 +14,8 @@ const myDb = {
     database: "xostron3",
     dialect: "postgres"
 }
-//драйвер postgres для SQL запросов (помощь к ORM)
+
+//драйвер postgres для SQL запросов (помощь к ORM) - для строковых запросов
 const pool = new Pool(myDb)
 
 //подключение к БД ORM (Object related model)
@@ -24,6 +29,7 @@ const sequelize = new Sequelize(
         dialect: myDb.dialect
     })
 
+// **************************Определяем таблицы БД через ORM******************************
 //1 Модель dicteng - общий словарь приложения
 // class DictEng extends Model { }
 const DictEng = sequelize.define(
