@@ -6,8 +6,21 @@ class User_wordController {
     async Create(req, res) {
         const { user_id, word_id, word, transcription, translate, comment
         } = req.body
-        console.log(req.body)
+        console.log('create one =', req.body)
+
         // const user_word = await 
+    }
+
+    async Update(req, res) {
+        const { user_id, word_id, word, transcription, translate, comment
+        } = req.body
+        console.log('update one =', req.body)
+    }
+
+    async Delete(req, res) {
+        const { user_id, word_id, word, transcription, translate, comment
+        } = req.body
+        console.log('delete one =', req.body)
     }
 
     async ReadAll(req, res) {
@@ -21,20 +34,9 @@ class User_wordController {
         res.json(link.rows)
     }
 
-    async Update(req, res) {
-        const id = req.params.id
-        const { repeat_count, correct_count, ratio, create_date, last_repeat_date } = req.body
-        const link = await pool.query(
-            'UPDATE user_word set repeat_count=$1, correct_count=$2, ratio=$3, create_date=$4, last_repeat_date=$5 where id=$6 RETURNING *',
-            [repeat_count, correct_count, ratio, create_date, last_repeat_date, id])
-        res.json(link.rows[0])
-    }
 
-    async Delete(req, res) {
-        const id = req.params.id
-        const link = pool.query('delete from user_word where id=$1', [id])
-        res.json("del")
-    }
+
+
 
 }
 module.exports = new User_wordController()

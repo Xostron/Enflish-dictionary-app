@@ -203,16 +203,17 @@ class EngdictController {
     async Delete(req, res) {
 
         const val = req.body
-        console.log('body = ', val)
+
         // res.status(201).json({
         //     message: 'delete'
         // })
         try {
             const allWords = Object.values(val)
+            console.log('allWords = ', Object.values(val))
             allWords.forEach(async (value) => {
                 const words = await DictEng.destroy({
                     where: {
-                        word: value
+                        word: value.word
                     }
                 })
                 console.log("===", value)
