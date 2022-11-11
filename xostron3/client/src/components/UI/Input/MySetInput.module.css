@@ -51,3 +51,25 @@
     outline: none;
     line-height: 1rem;
 }
+
+/***************** CUSTOM SCROLL ***********************/
+/* ширина scrollbar */
+.my_textarea::-webkit-scrollbar {
+    width: .3rem;
+
+}
+
+/* цвет дорожки */
+.my_textarea::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    /* background-color: #f9f9fd; */
+    border-radius: 0px;
+}
+
+.my_textarea::-webkit-scrollbar-thumb {
+    /* закругления плашки */
+    border-radius: 10px;
+    /* цвет плашки */
+    background: linear-gradient(180deg, #afafaf, #555555);
+    /* border: 3px solid orange; */
+}

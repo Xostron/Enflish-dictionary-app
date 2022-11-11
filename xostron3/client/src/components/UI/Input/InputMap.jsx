@@ -7,8 +7,9 @@ import iSub from '../../../img/bx-minus.svg'
 const InputMap = ({ obj }) => {
     const {
         trl,
-        handler,
-        handlerAddDel
+        changeHandlerTrl,
+        handlerAddDel,
+        idList
     } = obj
     return (
         <div className={style.content}>
@@ -22,7 +23,7 @@ const InputMap = ({ obj }) => {
                             placeholder={'Translate ' + (idx + 1)}
                             name='translate'
                             value={val}
-                            onChange={(e) => handler(e, idx)}
+                            onChange={(e) => changeHandlerTrl(e, idList, idx)}
                         />
                         {
                             // +1 строку перевода
@@ -31,7 +32,7 @@ const InputMap = ({ obj }) => {
                                     <HandySvg
                                         src={iAdd}
                                         className={style.icon}
-                                        onClick={() => handlerAddDel('add', idx)}
+                                        onClick={() => handlerAddDel('add', 'translate', idList, idx)}
                                     />
                                 </div> :
                                 // -1 строку перевода
@@ -39,7 +40,7 @@ const InputMap = ({ obj }) => {
                                     <HandySvg
                                         src={iSub}
                                         className={style.icon}
-                                        onClick={() => handlerAddDel('del', idx)}
+                                        onClick={() => handlerAddDel('del', 'translate', idList, idx)}
                                     />
                                 </div>
                         }

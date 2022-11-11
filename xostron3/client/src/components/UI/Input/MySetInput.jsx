@@ -39,7 +39,7 @@ const MySetInput = ({ idx, word, changeHandler }) => {
                     placeholder='Word'
                     name='word'
                     value={word.word}
-                    onChange={changeHandler}
+                    onChange={(e) => changeHandler(e, idx)}
                 />
                 <input
                     className={style.my_input}
@@ -62,7 +62,7 @@ const MySetInput = ({ idx, word, changeHandler }) => {
                     placeholder='Note'
                     name='example'
                     value={word.example}
-                    onChange={changeHandler}
+                    onChange={(e) => changeHandler(e, idx)}
                 />
             </div>
         </div>
