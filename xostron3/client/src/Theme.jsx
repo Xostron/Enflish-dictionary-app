@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { createGlobalStyle } from "styled-components";
 import './App.css'
 import subtitle from './components/UI/Subtitle/Subtitle.module.css'
-import subtitle2 from './components/UI/Subtitle/Subtitle2.module.css'
+// import subtitle2 from './components/UI/Subtitle/Subtitle2.module.css'
 import subtitle3 from './components/UI/Subtitle/Subtitle3.module.css'
 import rowIconBtn from './components/UI/MyRowIconBtn/MyRowIconBtn.module.css'
 import Card from './components/UI/Card/Card.module.css'
@@ -190,9 +190,7 @@ export const GlobalStyles = createGlobalStyle`
     span.${subtitle.text_span}{
     color: ${(props) => props.theme.spanColor};
     }
-    span.${subtitle2.text_span}{
-    color: ${(props) => props.theme.spanColor};
-    }
+
     span.${BtnCard.name}{
         color: ${(props) => props.theme.LogoColor};
     }

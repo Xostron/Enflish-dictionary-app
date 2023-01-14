@@ -7,7 +7,7 @@ import { useHttp } from '../../hooks/http.hook'
 import { TableHeader } from '../../components/Table/TableHeader';
 import { TableRow } from '../../components/Table/TableRow';
 import { replaceInput, sortWords } from '../../utils/UserFunction'
-import { Subtitle2 } from '../../components/UI/Subtitle/Subtitle2';
+// import { Subtitle2 } from '../../components/UI/Subtitle/Subtitle2';
 import { SetLinkOrBtn } from '../../components/SetLinkOrBtn/SetLinkOrBtn';
 import iAdd from '../../img/bx-plus.svg'
 import iBack from '../../img/svg/Vector-89.svg'

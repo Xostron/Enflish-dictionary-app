@@ -8,7 +8,7 @@ import iBack from '../img/svg/Vector-89.svg'
 import iDel from '../img/bx-trash-alt.svg'
 import iPen from '../img/bx-edit-alt.svg'
 import iShare from '../img/bx-share.svg'
-import { Subtitle2 } from '../components/UI/Subtitle/Subtitle2';
+// import { Subtitle2 } from '../components/UI/Subtitle/Subtitle2';
 
 
 export default function AllCards(params) {
@@ -165,14 +165,14 @@ export default function AllCards(params) {
 
     return (
         <div >
-            <Subtitle2 icon1={iBack} icon2={iAdd}
+            {/* <Subtitle2 icon1={iBack} icon2={iAdd}
                 handler1={() => { history(-1) }}
                 handler2={() => { history(`/card/none/edit`) }}
                 title={'Все наборы'}
                 text={Object.values(card).length}
-            >
+            > */}
 
-            </Subtitle2>
+            {/* </Subtitle2> */}
             {/* <hr /> */}
 
             {card && card.map((value, idx) => {
